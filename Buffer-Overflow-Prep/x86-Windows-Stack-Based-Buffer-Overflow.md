@@ -24,7 +24,7 @@ CPU Registers:
 * MMX Registers ( legacy )
 * XXM Registers ( used sometimes )
 
-EIP is gonna be the most important
+EIP is going to be the most important
 
 
 ### EIP 
@@ -34,30 +34,30 @@ EIP is gonna be the most important
 
 #### What is Assembly? 
 
-* A low level Programming Language 
-* Used to Comunicate with the microproccessor directly
-* Specific to the proccessor family ( Intel, ARM, MIPs, etc.)
-* Almost one-to-one corresponsence with machine language 
+* A low-level Programming Language 
+* Used to Communicate with the microprocessor directly
+* Specific to the processor family ( Intel, ARM, MIPs, etc.)
+* Almost one-to-one correspondence with machine language 
 
 
 #### Where is Assembly? 
 
 * broad applications in all fields of computing
-     * used for optimization of software, debugging, and all other manner of low level coding
+     * used for the optimization of software, debugging, and all other manners of low-level coding
      * as low as you can get without being 1 and 0 itself
 * Infosec Uses: 
      * shell coding 
      * encoders 
      * memory manipulation 
-     * execution hijacking / exploitation 
+     * execution hijacking/exploitation 
 
 
 #### Why is Assembly? 
 
 * Gateway to understanding: 
-     * memory/proccessor exploitation 
+     * memory/processor exploitation 
      * reverse engineering
-     * shellcoding
+     * shellcode
      * everything else 
 * Without a grasp of assembly, it will be nearly impossible to master any of these fields
 
@@ -67,16 +67,16 @@ EIP is gonna be the most important
      * 32 bit CPU Registers
      * Very Small Management scale of only a theoretical 4GB RAM
 * x86_64
-     * An extention of x86 for 64 bit proccessers
-     * 64 bit CPU Registers can access much more than 4GB RAM in fact 17Billion GB of ram is what it can access and handle 
+     * An extension of x86 for 64-bit processors
+     * 64 bit CPU Registers can access much more than 4GB RAM 17Billion GB of ram is what it can access and handle 
 
 
 #### Why Bother With 32 Bit Systems? 
 
 * Crawl, Walk, Then Run 
 * Mastering x86 is virtually required to progress to more complex worlds like x86_64
-* Almost all 64 bit machines can handle 32 bit applications
-     * it is for this reason a lot of malware use 32 bit
+* Almost all 64-bit machines can handle 32-bit applications
+     * it is, for this reason, a lot of malware use 32 bit
 
 #### Instruction Format
 
@@ -85,12 +85,12 @@ EIP is gonna be the most important
 ``
 
 * Label: used to represent either an identifier or a constant 
-* Mneumonic: identifies the purpose of the statment. a Mneumonoc is not required if a line contains only a label or a comment 
-     Examples of mnumonic: 
+* Mneumonic: identifies the purpose of the statement. a Mneumonoc is not required if a line contains only a label or a comment 
+     Examples of mnemonic: 
      * PUSH 
      * ADD 
      * MOV
-     * RETN
+     * RENT
 * Operands: specifies the data to be manipulated
      * most instructions take two of these 
 * Comment: Literally Just a Comment 
@@ -98,7 +98,7 @@ EIP is gonna be the most important
 add eax, ebx; EAX = EAX + EBX 
 
 Important Note:
-There are two types of sytax:
+There are two types of syntax:
 * AT&T
 * Intel 
 
@@ -118,6 +118,11 @@ AT&T goes source to destination while Intel does destination to source
      * Addresses are arranged in sequence 
 
 
+#### Proccess Memory 
+
+<img src=/images/proccess-memory.png width=300px height=300px>
+
+#### 
 
 
 
