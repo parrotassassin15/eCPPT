@@ -1,6 +1,8 @@
 # eCPPT Notes
 
-## System Security 
+# System Security 
+
+# ARK
 
 ### Compiling on Windows 10 and Linux
 
@@ -51,6 +53,8 @@ Bottom Left has three sections that contain the stack configuration
 <!-- I will Finish this section off with a friend -->
 
 ## Network Security 
+
+## ENUMERATION 
 
 ### Whois Lookup 
 
