@@ -89,17 +89,37 @@ EIP is gonna be the most important
      Examples of mnumonic: 
      * PUSH 
      * ADD 
-     * ZOR 
+     * MOV
+     * RETN
 * Operands: specifies the data to be manipulated
      * most instructions take two of these 
 * Comment: Literally Just a Comment 
 
 add eax, ebx; EAX = EAX + EBX 
 
+Important Note:
+There are two types of sytax:
+* AT&T
+* Intel 
 
+AT&T uses $ for const and % for Registers
+AT&T goes source to destination while Intel does destination to source 
 
 
 ## Win32 Process Memory 
+
+#### The basics of the stack 
+
+* When a application is initilized, Windows creates the proccess and assigns virtual memory to it 
+* 32 bit proccesses have addresses that range from 0x00000000 to 0xFFFFFFFF
+     * 0x00000000 - 0x7FFFFFFF is for user mode
+     * 0x80000000 - 0xFFFFFFFF is for kernal mode 
+* Windows uses the flat memory model 
+     * Addresses are arranged in sequence 
+
+
+
+
 
 ## Buffer Overflow 
 
