@@ -72,3 +72,13 @@ Record Types:
 * AAA
 * AAAA
 
+
+#### Nmap 
+
+``
+nmap -sV -sC -A parrot-ctfs.com -oA parrot-ctfs-scan 
+``
+
+`` 
+searchsploit --nmap parrot-ctfs-scan.xml
+``
