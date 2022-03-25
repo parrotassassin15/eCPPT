@@ -81,13 +81,18 @@ EIP is gonna be the most important
 #### Instruction Format
 
 ``
-[label] mnemonic [apperands] [;comment] 
+[label] mnemonic [opperands] [; comment] 
 ``
 
-Examples of mnumonic: 
-* PUSH 
-* ADD 
-* ZOR 
+* Label: used to represent either an identifier or a constant 
+* Mneumonic: identifies the purpose of the statment. a Mneumonoc is not required if a line contains only a label or a comment 
+     Examples of mnumonic: 
+     * PUSH 
+     * ADD 
+     * ZOR 
+* Operands: specifies the data to be manipulated
+     * most instructions take two of these 
+* Comment: Literally Just a Comment 
 
 add eax, ebx; EAX = EAX + EBX 
 
