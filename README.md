@@ -1,10 +1,12 @@
 # eCPPT Notes
 
-## Compiling on Windows 10 and Linux
+## System Security 
+
+### Compiling on Windows 10 and Linux
 
 C Code: 
 
-```
+```c
 void funtest(int a, int b, int c) {
     int test1 = 55;
     int test2 = 56;
@@ -20,10 +22,10 @@ int main() {
 
 #### Compile It: 
 
-* Windows: c1 functest.c
-* Linux: gcc functest.c -o hello_world
+* Windows: PS> c1 functest.c
+* Linux: ~# gcc functest.c -o hello_world
 
-## Immunity Debugger Notes: 
+### Immunity Debugger Notes: 
 
 #### Loading In A File:  
 
@@ -41,6 +43,10 @@ Right Box has registries and their current values
 
 Bottom Left has three sections that contain the stack configuration 
 
-* Section 1: 
-* Section 2: 
-* Section 3: 
+* Section 1: Memory Address of the stack 
+* Section 2: Hex code and values at that address
+* Section 3: Acii representation 
+* Section 4: Value contained there 
+
+
+## 
