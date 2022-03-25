@@ -48,5 +48,33 @@ Bottom Left has three sections that contain the stack configuration
 * Section 3: Acii representation 
 * Section 4: Value contained there 
 
+<!-- I will Finish this section off with a friend -->
 
-## 
+## Network Security 
+
+### Whois Lookup 
+
+Whois Lookup: 
+
+* whois ( windows and linux )
+* whois.icann.org/en
+
+### Information Gathering DNS
+
+DNS Enumeration: 
+
+* dnsenum
+* dig
+* nslookup 
+
+#### dnsenum 
+
+
+
+#### dig
+
+#### nslookup 
+
+
+
+### Pivoting Notes: 
