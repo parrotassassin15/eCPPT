@@ -1,4 +1,4 @@
-## x86 Windows Stack-Based Buffer Overflow
+# x86 Windows Stack-Based Buffer Overflow
 
 YouTube Tutorial: 
 <br />
@@ -60,6 +60,38 @@ EIP is gonna be the most important
      * shellcoding
      * everything else 
 * Without a grasp of assembly, it will be nearly impossible to master any of these fields
+
+#### Intel Architecture
+
+* x86 
+     * 32 bit CPU Registers
+     * Very Small Management scale of only a theoretical 4GB RAM
+* x86_64
+     * An extention of x86 for 64 bit proccessers
+     * 64 bit CPU Registers can access much more than 4GB RAM in fact 17Billion GB of ram is what it can access and handle 
+
+
+#### Why Bother With 32 Bit Systems? 
+
+* Crawl, Walk, Then Run 
+* Mastering x86 is virtually required to progress to more complex worlds like x86_64
+* Almost all 64 bit machines can handle 32 bit applications
+     * it is for this reason a lot of malware use 32 bit
+
+#### Instruction Format
+
+``
+[label] mnemonic [apperands] [;comment] 
+``
+
+Examples of mnumonic: 
+* PUSH 
+* ADD 
+* ZOR 
+
+add eax, ebx; EAX = EAX + EBX 
+
+
 
 
 ## Win32 Process Memory 
