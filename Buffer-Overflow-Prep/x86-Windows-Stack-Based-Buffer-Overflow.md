@@ -132,11 +132,24 @@ A stack is a place in the memory of a computer that holds Temporary Variables/Da
 * Variables
 
 
+#### Return Address 
 
 For each new program function, A new stack frame is created. 
 Close to the bottom of each stack frame, There is a return address 
 the return address tells the CPU where to execute and where to go 
 after it is done. 
+
+##### Demo 
+
+```python3 
+string parrotisgay(str):
+
+int main:
+     str = "fuck me" 
+     parrotisgay(str)
+
+
+```
 
 
 
