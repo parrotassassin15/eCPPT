@@ -108,7 +108,9 @@ AT&T goes source to destination while Intel does destination to source
 
 ## Win32 Process Memory 
 
-#### The basics of the stack 
+#### The basics of the Stack 
+
+A stack is a place in the memory of a computer that holds Temporary Variables/Data
 
 * When a application is initilized, Windows creates the proccess and assigns virtual memory to it 
 * 32 bit proccesses have addresses that range from 0x00000000 to 0xFFFFFFFF
@@ -118,11 +120,23 @@ AT&T goes source to destination while Intel does destination to source
      * Addresses are arranged in sequence 
 
 
-#### Proccess Memory 
+#### Process Memory Mind Map
 
 <img src=/images/proccess-memory.png width=300px height=300px>
 
-#### 
+<br />
+
+#### What Is held in the Stack? 
+
+* User input to be used later on by application
+* Variables
+
+
+
+For each new program function, A new stack frame is created. 
+Close to the bottom of each stack frame, There is a return address 
+the return address tells the CPU where to execute and where to go 
+after it is done. 
 
 
 
