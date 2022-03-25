@@ -65,16 +65,32 @@ DNS Enumeration:
 
 * dnsenum
 * dig
+* feirce
 * nslookup 
 
 #### dnsenum 
-
-
 
 #### dig
 
 #### nslookup 
 
+``sh 
+nslookup parrot-ctfs.com 
+``
+
+``sh
+nslookup -query<type> parrot-ctfs.com 
+``
+
+record types: 
+* MX
+* TXT
+* A
+* CNAME
+* AAA
+* AAAA
 
 
 ### Pivoting Notes: 
+
+
