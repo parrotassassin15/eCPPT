@@ -204,16 +204,24 @@ Assembly has serveral instructions specifically designed to interact with the st
 
 ASSEMBLY BREAK DOWN: 
 
-1. ( PUSH EBP - SUB ESP, 98 ) Adjusting stack pointers to make room in the stack for a new stack frame to operate in
+* ( PUSH EBP - SUB ESP, 98 ) Adjusting stack pointers to make room in the stack for a new stack frame to operate in
 
-2. ( MOV EAX,DWORD PTR SS:[ EBP+8 ] - MOV DWORD PTR SS:[ ESP ],EAX ) Taking function paramaters and loading them onto the stack 
+* ( MOV EAX,DWORD PTR SS:[ EBP+8 ] - MOV DWORD PTR SS:[ ESP ],EAX ) Taking function paramaters and loading them onto the stack 
 
-3. Calling A function in C called strycpy which is a string copy function in C
+* Calling A function in C called strycpy which is a string copy function in C
 
-4. RETURNS 
+* RETURNS 
 
 
 ### More on the stack ( smashing the stack )
+
+#### Stack Mind Map
+
+LINK: http://unixwiz.net/techtips/win32-callconv-asm.html
+
+<img src="/images/stack.png" >
+
+
 
 
 
