@@ -15,6 +15,12 @@ link: https://youtu.be/Z2pQuGmFNrM
      * WarFTP v1.65
 * Attacker Machine: Demon Linux 
 
+Resources: 
+
+XP ISO FILE: https://archive.org/details/WinXPProSP3x86
+PRODUCT KEY:  M6TF9-8XQ2M-YQK9F-7TBB2-XGG88
+
+
 CPU Registers: 
 
 * General Purpose Registers 
@@ -139,9 +145,9 @@ Close to the bottom of each stack frame, There is a return address
 the return address tells the CPU where to execute and where to go 
 after it is done. 
 
-##### Demo 
+##### Demo 1
 
-Note:  this is not valid python! This is Just a mind map, but very important to understand.
+NOTES:  this is not valid python! This is Just a mind map, but very important to understand.
 
 ```python3 
 string parrot(str):
@@ -174,17 +180,32 @@ Order of everything being ran:
 ```
 ### Stack Instructions
 
+NOTES: the highest point in the stack is the lowest point in memory
+
+
 Assembly has serveral instructions specifically designed to interact with the stack 
 
 * PUSH < operand >; Example: PUSH EAX
       * Decrements ESP and then places the operand (a register, address etc.)
-      onto the top of the stack ( the stack grows )
+      onto the top of the stack ( The Stack Grows )
+      * 
+      Example: Imagine you have a stack of plates and you add a plate the last plate you put on there is the first plate you are gonna take off 
+
 * POP < operand >; Example: POP EAX
-      * Loads the value from the top of the stack into the location specified in the operand then increments ESP ( the stack shrinks )
+      * Loads the value from the top of the stack into the location specified in the operand then increments ESP ( The Stack Shrinks )
+
+      * This does the opposite of PUSH 
 * RET 
      * Transfers Program to control to a return address located on the top of
-     the stack 
-            * Typically, this address is places on the stack by a CALL instruction when a function is called; This instruction is intended to return to a normal execution flow after a function is finished execution 
+     the stack. Typically, this address is places on the stack by a CALL instruction when a function is called; This instruction is intended to return to a normal execution flow after a function is finished execution 
+
+
+#### Demo 2
+
+<img src="/images/immunity.png">
+
+
+
 
 ## Buffer Overflow 
 
