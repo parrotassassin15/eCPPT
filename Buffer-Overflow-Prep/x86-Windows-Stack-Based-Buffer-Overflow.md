@@ -141,7 +141,9 @@ after it is done.
 
 ##### Demo 
 
-note this is not valid python! just a mind map 
+
+<p color="yellow"> Note:  this is not valid python! just a mind map </p>
+
 
 ```python3 
 string parrotisgay(str):
