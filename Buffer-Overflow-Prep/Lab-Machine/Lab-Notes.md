@@ -186,7 +186,7 @@ s.send(b"PASS parrot\r\n")
 s.close()
 ```
 
-#### if we take a look at immunity we now see that the EIP is different 
+#### If we take a look at immunity we now see that the EIP is different 
 
 <img src="/images/immunity-offset.png">
 
@@ -235,8 +235,6 @@ s.send(b"PASS parrot\r\n")
 s.close()
 ```
 
-#### since we now know we can control the Cs as seen below we need the Bs to be a memory address so we can sent it to a place where we control aka the Cs
-
-
+#### Since we now know we can control the Cs as seen below we need the Bs to be a memory address so we can sent it to a place where we control aka the Cs
 
 <img src="/images/debugger.png">
