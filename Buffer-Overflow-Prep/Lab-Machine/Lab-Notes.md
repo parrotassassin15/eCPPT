@@ -37,7 +37,7 @@ As you can see, the exploit did not work ( This is because it just crashed the a
 <img src="/images/immunity-ftp.png" width=812px height=474px>
 
 
-### Vulnerability Discovery Inside The Application 
+#### Vulnerability Discovery Inside The Application 
 
 ## Manual 
 
@@ -238,3 +238,7 @@ s.close()
 #### Since we now know we can control the Cs as seen below we need the Bs to be a memory address so we can sent it to a place where we control aka the Cs
 
 <img src="/images/debugger.png">
+
+
+#### Finding Bad Chars
+
