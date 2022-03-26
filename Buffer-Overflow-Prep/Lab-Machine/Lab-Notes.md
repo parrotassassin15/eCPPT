@@ -470,3 +470,7 @@ s.send(b"PASS parrot\r\n")
 s.close()
 ```
 
+
+### Reverse Shell
+
+<img src="/images/rev-shell.png">
