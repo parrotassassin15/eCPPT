@@ -262,7 +262,7 @@ By default "\x00" is going to be a bad char this is because "\x00" terminates th
 
 Lets remove that, send the exploit, and then see what else is an issue when it makes it into memory 
 
-updated exploit: 
+Updated Exploit: 
 
 ```python3
 #!/usr/bin/python3
@@ -295,7 +295,23 @@ s.send(b"PASS parrot\r\n")
 s.close()
 
 ```
+
+### Bad Char Dump
 <img src="/images/badchar-dump.png">
 
 
 There are two 20s in this dump this is the numerical value of \x0a this will need to be removed ( this is an issue because we are sending through FTP and that is a new line char
+
+badchars
+* \x0a
+* \x40
+* \x
+
+
+We could waste our time with looking for JMP addresses manually or we can use mona modules 
+
+``
+!mona jmp -r esp 
+``
+
+<img src="/images/mona-jmp.png">
