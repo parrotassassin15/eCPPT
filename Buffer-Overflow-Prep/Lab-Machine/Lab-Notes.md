@@ -20,7 +20,7 @@ I imported nmap scan like so:
 searchsploit --nmap xp-machine-tcp.xml 
 ``
 
-But output was too versbose did not put it here and instead re ran the command manually 
+But output was too versbose so I did not put it here and instead re-ran the command manually 
 
 <img src="/images/searchsploit-1.png" >
 
@@ -31,3 +31,7 @@ But output was too versbose did not put it here and instead re ran the command m
 
 As you can see the exploit did not work ( This is because it just crashed the application so we are gonna remake this mannually )
 
+
+### I Attached The Program to Immunity Debugger 
+
+<img src="images/immunity-ftp.png" >
