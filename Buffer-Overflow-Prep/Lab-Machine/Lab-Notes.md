@@ -51,7 +51,7 @@ This prints 1,000 As for ease of access
 
 #### So we are gonna try with NetCat and See If that works better 
 
-<img src="/images/crash-succeeded">
+<img src="/images/crash-succeeded.png">
 
 #### As you can see we crashed the program ( I did Have to enter a pass before it did ) and to confirm I opened our debugger 
 
