@@ -46,4 +46,6 @@ This prints 1,000 As for ease of access
 ``
 python3 -c 'print("A"*1000)'
 ``
+
+
 <img src="/images/python-oneliner.png">
