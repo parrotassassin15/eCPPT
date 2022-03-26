@@ -34,4 +34,4 @@ As you can see the exploit did not work ( This is because it just crashed the ap
 
 ### I Attached The Program to Immunity Debugger 
 
-<img src="/images/immunity-ftp.png" >
+<img src="/images/immunity-ftp.png" width=812px height=474px>
