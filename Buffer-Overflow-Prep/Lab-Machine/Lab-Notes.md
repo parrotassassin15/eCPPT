@@ -399,11 +399,11 @@ At this point we are seeing the Cs in the CPU panel we have complete control now
 
 #### Generating Shellcode 
 
+<img src="/images/shellcode-gen.png">
 
+#### Generating Some Padding
 
-
-
-
+<img src="/images/metasm-shell.png">
 
 ### Working Exploit 
 
