@@ -17,9 +17,10 @@ link: https://youtu.be/Z2pQuGmFNrM
 
 Resources: 
 
-XP ISO FILE: https://archive.org/details/WinXPProSP3x86
+XP ISO FILE: https://archive.org/details/WinXPProSP3x86 <br />
 PRODUCT KEY:  M6TF9-8XQ2M-YQK9F-7TBB2-XGG88
 
+SNAPSHOT I CREATED: < will put on here when I find out where imma host it >
 
 CPU Registers: 
 
@@ -220,8 +221,14 @@ ASSEMBLY BREAK DOWN:
 LINK: http://unixwiz.net/techtips/win32-callconv-asm.html
 
 <img src="/images/stack.png" >
+<img src="/images/stack2.png" >
 
+* ESP is the top of the stack 
+* EBP is bottom of the CURRENT stack frame
+* EIP saved right after EBP ( return address right here )
+* Function arguments 
 
+<img src="/images/stack3.png" >
 
 
 
