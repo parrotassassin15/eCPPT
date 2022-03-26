@@ -255,8 +255,16 @@ void main()
 
 ```
 
+How is this vulnerable? 
+
+Well because BufferB is being Copied into BufferA and they both variables accept different ammounts of data one being 49 and another being 15. 
+
+why is it 49 and 15 and not 50 and 16? 
+
+Well because it needs a nullbyte char there so by default its taken up! 
+
+<img src="/images/bOf.png">
 
 ## Buffer Overflow 
 
 ## Demo 
-
