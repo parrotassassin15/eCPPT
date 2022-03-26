@@ -131,4 +131,4 @@ while True:
 
 #### We find that it crashes at 510 as the server no longer responds after 
 
-<img src="/images/python3-crash.png" width=500px height=300px>
+<img src="/images/python3-crash.png" width=80px height=300px>
