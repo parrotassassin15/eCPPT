@@ -176,10 +176,10 @@ Order of everything being ran:
 
 Assembly has serveral instructions specifically designed to interact with the stack 
 
-* PUSH <operand>; Example: PUSH EAX
+* PUSH < operand >; Example: PUSH EAX
       * Decrements ESP and then places the operand (a register, address etc.)
       onto the top of the stack ( the stack grows )
-* POP <operand>; Example: POP EAX
+* POP < operand >; Example: POP EAX
       * Loads the value from the top of the stack into the location specified in the operand then increments ESP ( the stack shrinks )
 * RET 
      * Transfers Program to control to a return address located on the top of
