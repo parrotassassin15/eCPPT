@@ -141,20 +141,24 @@ after it is done.
 
 ##### Demo 
 
-
-<p color="yellow"> Note:  this is not valid python! just a mind map </p>
-
+Note:  this is not valid python! just a mind map
 
 ```python3 
-string parrotisgay(str):
+string parrot(str):
      parrotbathing = parrotbathing()
      return parrotbathing
 
-int main: # this is a different part in memory than "string parrotisgay" 
-     str = "fuck me" 
-     parrotisgay(str)
-
+int main(): <-- this is a different part in memory than "string parrot" 
+     str = "hello world" 
+     parrot(str)
+     program.continue
 ```
+
+Explaination:  
+when "main()" runs "str" will set "hello world" in the stack. Then it will hit the "parrot(str)" but it has to go somewhere else 
+in memory to execute it so "program.continue" will save its place so it knows to come back to that same spot. "string parrot(str):"
+will then be executed and when it hits "return parrotbathing"
+
 
 
 
