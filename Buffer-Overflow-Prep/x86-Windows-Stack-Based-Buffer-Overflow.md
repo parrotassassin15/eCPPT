@@ -158,7 +158,7 @@ Explaination:
 
 when "main()" runs "str" will set "hello world" in the stack. Then it will hit the "parrot(str)" but it has to go somewhere else 
 in memory to execute it so "program.continue" will save its place so it knows to come back to that same spot. "string parrot(str):"
-will then be executed and when it hits "return parrotbathing"
+will then be executed and when it hits "return parrotbathing" it will go back to program.continue
 
 Order of everything being ran: 
 
@@ -172,7 +172,19 @@ Order of everything being ran:
 3.     parrot(str)
 7.     program.continue
 ```
+### Stack Instructions
 
+Assembly has serveral instructions specifically designed to interact with the stack 
+
+* PUSH <operand>; Example: PUSH EAX
+      * Decrements ESP and then places the operand (a register, address etc.)
+      onto the top of the stack ( the stack grows )
+* POP <operand>; Example: POP EAX
+      * Loads the value from the top of the stack into the location specified in the operand then increments ESP ( the stack shrinks )
+* RET 
+     * Transfers Program to control to a return address located on the top of
+     the stack 
+            * Typically, this address is places on the stack by a CALL instruction when a function is called; This instruction is intended to return to a normal execution flow after a function is finished execution 
 
 ## Buffer Overflow 
 
