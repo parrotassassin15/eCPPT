@@ -188,12 +188,10 @@ Assembly has serveral instructions specifically designed to interact with the st
 * PUSH < operand >; Example: PUSH EAX
       * Decrements ESP and then places the operand (a register, address etc.)
       onto the top of the stack ( The Stack Grows )
-      * 
-      Example: Imagine you have a stack of plates and you add a plate the last plate you put on there is the first plate you are gonna take off 
+      * Example: Imagine you have a stack of plates and you add a plate the last plate you put on there is the first plate you are gonna take off 
 
 * POP < operand >; Example: POP EAX
       * Loads the value from the top of the stack into the location specified in the operand then increments ESP ( The Stack Shrinks )
-
       * This does the opposite of PUSH 
 * RET 
      * Transfers Program to control to a return address located on the top of
