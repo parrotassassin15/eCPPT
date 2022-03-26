@@ -143,4 +143,4 @@ the bigger the crash the more you can do and the easier it is to exploit it
 
 as seen here: 
 
-<img src="/images/broken-program.png">
+<img src="/images/broken-progam.png">
