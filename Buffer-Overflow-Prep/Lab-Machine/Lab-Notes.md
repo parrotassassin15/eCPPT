@@ -314,4 +314,4 @@ We could waste our time with looking for JMP addresses manually or we can use mo
 !mona jmp -r esp 
 ``
 
-<img src="/images/mona-jmp.png">
+<img src="/images/jmp-mona.png">
