@@ -48,3 +48,11 @@ This prints 1,000 As for ease of access
 In the case of trying this directly through a FTP Client on a modern Distrobution the Client will stop you from sending the max buffer 
 
 <img src="/images/failed-exploit.png">
+
+So we are gonna try with NetCat and See If that works better 
+
+<img src="/images/crash-succeeded.png">
+
+As you can see we crashed the program and to confirm I opened our debugger 
+
+<img src="/images/immunity-crash.png">
