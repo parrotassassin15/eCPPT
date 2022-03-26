@@ -310,8 +310,22 @@ badchars
 
 We could waste our time with looking for JMP addresses manually or we can use mona modules 
 
+
+### Doing it manually 
+STEPS:
+* Top LEFT hand corner there is a button view ( click view executable modules )
+* Righ Click ( press search )
+     * JMP ESP
+     * CALL ESP
+     * PUSH ESP; RET
+
 ``
 !mona jmp -r esp 
 ``
 
+The results should be simlar to the following: 
+
 <img src="/images/jmp-mona.png">
+
+
+When Looking through the addresses for overwriting ( you will wanna look for the exe file of the vulnerable application )
