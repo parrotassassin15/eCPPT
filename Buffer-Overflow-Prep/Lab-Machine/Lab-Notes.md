@@ -43,9 +43,8 @@ As you can see the exploit did not work ( This is because it just crashed the ap
 
 This prints 1,000 As for ease of access 
 
-``
-python3 -c 'print("A"*1000)'
-``
-
-
 <img src="/images/python-oneliner.png">
+
+In the case of trying this directly through a FTP Client on a modern Distrobution the Client will stop you from sending the max buffer 
+
+<img src="/images/failed-exploit.png">
