@@ -163,14 +163,14 @@ will then be executed and when it hits "return parrotbathing"
 Order of everything being ran: 
 
 ```python3 
-4 string parrot(str):
-5     parrotbathing = parrotbathing()
-6     return parrotbathing
+4. string parrot(str):
+5.     parrotbathing = parrotbathing()
+6.     return parrotbathing
 
-1 int main(): <-- this is a different part in memory than "string parrot" 
-2     str = "hello world" 
-3     parrot(str)
-7     program.continue
+1. int main(): <-- this is a different part in memory than "string parrot" 
+2.     str = "hello world" 
+3.     parrot(str)
+7.     program.continue
 ```
 
 
