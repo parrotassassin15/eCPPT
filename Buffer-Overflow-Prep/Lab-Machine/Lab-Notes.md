@@ -35,3 +35,15 @@ As you can see the exploit did not work ( This is because it just crashed the ap
 ### I Attached The Program to Immunity Debugger 
 
 <img src="/images/immunity-ftp.png" width=812px height=474px>
+
+
+### Vulnerabilty Discovery Inside The Application 
+
+#### Python One Liner To Find Crashing Point Manually
+
+This prints 1,000 As for ease of access 
+
+``
+python3 -c 'print("A"*1000)'
+``
+<img src="/images/python-oneliner.png">
