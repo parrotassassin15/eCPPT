@@ -55,4 +55,4 @@ This prints 1,000 As for ease of access
 
 #### As you can see we crashed the program ( I did Have to enter a pass before it did ) and to confirm I opened our debugger 
 
-<img src="/images/immunity-crash.png">
+<img src="/images/immunity-crash.png" width=812px height=474px>
