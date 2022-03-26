@@ -1,7 +1,8 @@
 # x86 Windows Stack-Based Buffer Overflow
 
 YouTube Tutorial: 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+<br />
+link: https://youtu.be/Z2pQuGmFNrM
 
 ## Intro to Exploit Development
 
@@ -140,13 +141,16 @@ after it is done.
 
 ##### Demo 
 
+note this is not valid python! just a mind map 
+
 ```python3 
 string parrotisgay(str):
+     parrotbathing = parrotbathing()
+     return parrotbathing
 
-int main:
+int main: # this is a different part in memory than "string parrotisgay" 
      str = "fuck me" 
      parrotisgay(str)
-
 
 ```
 
