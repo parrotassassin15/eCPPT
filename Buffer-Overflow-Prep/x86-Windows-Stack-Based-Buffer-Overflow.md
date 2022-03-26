@@ -141,7 +141,7 @@ after it is done.
 
 ##### Demo 
 
-Note:  this is not valid python! just a mind map
+Note:  this is not valid python! This is Just a mind map, but very important to understand.
 
 ```python3 
 string parrot(str):
@@ -154,12 +154,24 @@ int main(): <-- this is a different part in memory than "string parrot"
      program.continue
 ```
 
-Explaination:  
+Explaination: 
+
 when "main()" runs "str" will set "hello world" in the stack. Then it will hit the "parrot(str)" but it has to go somewhere else 
 in memory to execute it so "program.continue" will save its place so it knows to come back to that same spot. "string parrot(str):"
 will then be executed and when it hits "return parrotbathing"
 
+Order of everything being ran: 
 
+```python3 
+4 string parrot(str):
+5     parrotbathing = parrotbathing()
+6     return parrotbathing
+
+1 int main(): <-- this is a different part in memory than "string parrot" 
+2     str = "hello world" 
+3     parrot(str)
+7     program.continue
+```
 
 
 ## Buffer Overflow 
