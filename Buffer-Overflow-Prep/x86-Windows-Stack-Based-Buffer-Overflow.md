@@ -221,18 +221,42 @@ ASSEMBLY BREAK DOWN:
 LINK: http://unixwiz.net/techtips/win32-callconv-asm.html
 
 <img src="/images/stack.png" >
-<img src="/images/stack2.png" >
 
 * ESP is the top of the stack 
 * EBP is bottom of the CURRENT stack frame
 * EIP saved right after EBP ( return address right here )
 * Function arguments 
 
-<img src="/images/stack3.png" >
+#### What is the purpose of learning all this stuff? 
+
+* Some low level programing languages ( C and C++ mostly ) do not check how large data is before it puts it onto the stack 
+
+* If user inpute is accepted into a variable the programmer must be sure
+to include logic to check the supplied data and ensure it is apporpriately sized before it is accepted into the proccess memory and placed onto the stack 
+
+* Many languages do  not have default protections 
 
 
+Example Vulnerable Code: 
+
+```c 
+void main()
+{
+     char bufferA[50];
+     char bufferB[16];
+
+     printf("what is your name?\n");
+
+     gets(bufferA);
+
+     strcpy(bufferB, bufferA);
+     return; 
+}
+
+```
 
 
 ## Buffer Overflow 
 
 ## Demo 
+
