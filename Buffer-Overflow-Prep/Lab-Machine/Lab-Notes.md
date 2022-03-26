@@ -39,6 +39,8 @@ As you can see, the exploit did not work ( This is because it just crashed the a
 
 ### Vulnerability Discovery Inside The Application 
 
+## Manual 
+
 #### Python One Liner To Find Crashing Point Manually
 
 This prints 1,000 As for ease of access 
@@ -56,3 +58,7 @@ This prints 1,000 As for ease of access
 #### As you can see we crashed the program ( I did have to enter a pass before it crashed ) and to confirm the crash opened our debugger 
 
 <img src="/images/immunity-crash.png" width=812px height=474px>
+
+#### YAAAY we have control over the EIP and have written over it with our A's 
+
+<img src="/images/immunity-EIP.png">
