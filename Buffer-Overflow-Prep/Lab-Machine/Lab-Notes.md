@@ -45,14 +45,14 @@ This prints 1,000 As for ease of access
 
 <img src="/images/python-oneliner.png">
 
-In the case of trying this directly through a FTP Client on a modern Distrobution the Client will stop you from sending the max buffer 
+#### In the case of trying this directly through a FTP Client on a modern Distrobution the Client will stop you from sending the max buffer 
 
 <img src="/images/failed-exploit.png">
 
-So we are gonna try with NetCat and See If that works better 
+#### So we are gonna try with NetCat and See If that works better 
 
-<img src="/images/crash-succeeded.png">
+<img src="/images/crash-succeeded">
 
-As you can see we crashed the program and to confirm I opened our debugger 
+#### As you can see we crashed the program ( I did Have to enter a pass before it did ) and to confirm I opened our debugger 
 
 <img src="/images/immunity-crash.png">
