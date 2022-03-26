@@ -18,9 +18,9 @@ link: https://youtu.be/Z2pQuGmFNrM
 Resources: 
 
 XP ISO FILE: https://archive.org/details/WinXPProSP3x86 <br />
-PRODUCT KEY:  M6TF9-8XQ2M-YQK9F-7TBB2-XGG88
+PRODUCT KEY:  M6TF9-8XQ2M-YQK9F-7TBB2-XGG88 <br /> <br />
 
-SNAPSHOT I CREATED: < will put on here when I find out where imma host it >
+SNAPSHOT I CREATED:  https://github.com/parrotassassin15/eCPPT/Buffer-Overflow-Prep/Lab-Machine/Lab/lab-machine-WarFTP-1.65.7z
 
 CPU Registers: 
 
@@ -280,7 +280,5 @@ Well because it needs a nullbyte char there so by default its taken up!
       * ASLR
       * DEP 
 * However each of these has its own bypasses and countermeasures 
-
-
 
 
