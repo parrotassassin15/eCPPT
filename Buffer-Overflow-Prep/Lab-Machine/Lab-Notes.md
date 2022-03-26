@@ -101,7 +101,7 @@ s.close()
 
 ## Automation 
 
-#### We need to find the exact crash point so we make a fuzzing script to narrow it down after manual or automate it from the begining 
+#### We need to find the exact crash point so we make a fuzzing script to narrow it down after manual or automate it from the beginning 
 
 
 ```python3
@@ -131,4 +131,16 @@ while True:
 
 #### We find that it crashes at 510 as the server no longer responds after 
 
-<img src="/images/python3-crash.png" width=800px height=340px>
+<img src="/images/python3-crash.png" width=300px height=200px>
+
+
+#### Let's find how big we can go with the buffer space 
+
+By slowly incrementing the value of the buffers being sent you can look for a new crash, something to break etc 
+the bigger the crash the more you can do and the easier it is to exploit it 
+
+#### It seems we can only send 1100 bytes at a time! 
+
+as seen here: 
+
+<img src="/images/broken-program.png">
