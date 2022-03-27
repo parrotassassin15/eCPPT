@@ -15,6 +15,7 @@ DNS Enumeration:
 * dig
 * feirce
 * nslookup 
+* dnsrecon
 
 #### DIG
 
@@ -59,6 +60,30 @@ fierce --domain parrot-ctfs.com
 
 <img src="/images/fierce.png">
 
+
+#### DNSENUM
+
+``
+dnsenum -r parrot-ctfs.com
+``
+
+DNSENUM is a very powerful tool even going as far as to bruteforce subdomains 
+
+### Host Discovery
+
+``
+fping -ag 192.168.0.1/24 2>/dev/null
+``
+
+``
+nmap -v -sn 192.168.0.0/24
+``
+
+``
+netdiscover -r 192.168.0.0/24
+``
+
+### Vulnerability Detection
 
 #### Nmap + Searchsploit Automation 
 
