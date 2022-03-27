@@ -41,7 +41,7 @@ nslookup parrot-ctfs.com
 nslookup -query=<type> parrot-ctfs.com 
 ``
 
-<img src="/images/nslookup.png>
+<img src="/images/nslookup.png">
 
 Record Types: 
 * MX
