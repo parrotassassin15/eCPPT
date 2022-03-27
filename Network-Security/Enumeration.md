@@ -18,11 +18,18 @@ DNS Enumeration:
 
 #### DIG
 
+##### Regular Query
+
 ``
 dig parrot-ctfs.com
 ``
 
+##### Dig Zone Transfer
+``
+dig parrot-ctfs.com AXFR +noall +noanswer 
+``
 
+<img src="/images/dig.png">
 
 #### NSLOOKUP 
 
@@ -34,7 +41,7 @@ nslookup parrot-ctfs.com
 nslookup -query=<type> parrot-ctfs.com 
 ``
 
-<img src="/images/nslookup.png">
+<img src="/images/nslookup.png>
 
 Record Types: 
 * MX
@@ -43,6 +50,14 @@ Record Types:
 * CNAME
 * AAA
 * AAAA
+
+#### FIERCE
+
+``
+fierce --domain parrot-ctfs.com
+``
+
+<img src="/images/fierce.png">
 
 
 #### Nmap + Searchsploit Automation 
@@ -54,5 +69,3 @@ nmap -sV -sC -A parrot-ctfs.com -oA parrot-ctfs-scan
 `` 
 searchsploit --nmap parrot-ctfs-scan.xml
 ``
-
-
